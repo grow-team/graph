@@ -1,11 +1,16 @@
 #   开发计划
 
+## logo
+
+    [Our logo](https://an-jia.github.io/graph/logo/index.html)
+
 ## 缩略图
 
 [总体计划草图](https://an-jia.github.io/graph/plan/images/1.jpg)
 
 ### 现行任务
 
+    一：2017年7月29日：
     1、webpack、rollup、xxx调研(an)
     2、js的单元测试、继承测试(jia)
     3、图形库分类 （延后处理）
