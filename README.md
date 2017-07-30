@@ -2,7 +2,7 @@
 
 ## logo
 
-    [Our logo](https://an-jia.github.io/graph/logo/index.html)
+[Our logo](https://an-jia.github.io/graph/logo/index.html)
 
 ## 缩略图
 

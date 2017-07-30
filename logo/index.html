@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas width=800 height=600 id="mycan"></canvas>
+	<script type="text/javascript">
+		window.onload = function(){
+            var bw = 20;
+            var by = 20;
+			var can = document.getElementById('mycan');
+			var ct = can.getContext('2d');
+
+            ct.beginPath();
+			ct.lineTo(105+bw,45+bw);
+            ct.lineTo(105+bw,180+bw);
+            ct.strokeStyle = '#0064b5';
+            ct.lineWidth = 10;
+            ct.stroke();
+
+			ct.beginPath();
+			ct.lineTo(100+bw,150+bw);
+            ct.lineTo(0+bw,150+bw);
+            ct.arc(100+bw,150+bw,100,Math.PI,Math.PI*3/2); 
+			ct.strokeStyle = '#0064b5';
+			ct.stroke();
+
+            ct.beginPath();
+			ct.arc(100+bw,150+bw,100,Math.PI*2/3,Math.PI); 
+			ct.strokeStyle = '#0064b5';
+            ct.lineWidth = 10;
+			ct.stroke();
+
+            ct.beginPath();
+            ct.lineTo(160+bw,45+bw);
+            ct.lineTo(160+bw,55+bw);
+            ct.strokeStyle = '#0064b5';
+            ct.lineWidth = 20;
+			ct.stroke();
+
+            ct.beginPath();
+			ct.lineTo(160+bw,60+bw);
+            ct.lineTo(160+bw,150+bw);
+            ct.strokeStyle = 'red';
+            ct.lineWidth = 10;
+			ct.stroke();
+
+            ct.beginPath();
+			ct.arc(60+bw,150+bw,100,0,Math.PI*1/2);
+			ct.strokeStyle = 'red';
+			ct.stroke();
+		}
+	</script>
+</body>
+</html>
