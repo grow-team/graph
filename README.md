@@ -18,9 +18,14 @@
 
     预期两周（可变），下次正式交流时间（2017年8月12、13号）
 
+### todo
+
+1. cli
+
 ### 鼓励
 
 *今天logo也有了，完美的开始。一定要坚持下去，按照规划一步一步做完。I believe we can do.*
+
 
 **Although we are not the best, but we can stick to the end. And we have been in better progress every day**
 
