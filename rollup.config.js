@@ -15,12 +15,12 @@ let creatOpts = function(){
  */
 export default [
   {
-    entry: 'src/main.ts',
+    entry: 'src/graph.ts',
     targets: [
       { dest: 'out/umd/graph.js', format: 'umd' },
       { dest: 'out/es/graph.js', format: 'es' }
     ],
-    moduleName: 'graph',
+    moduleName: 'Graph',
     plugins: [
         rollupTypescript(),
         nodeResolve(),
@@ -32,12 +32,12 @@ export default [
         })
     ]
   },{
-    entry: 'src/main.ts',
+    entry: 'src/graph.ts',
     targets: [
       { dest: 'out/umd/graph.min.js', format: 'umd' },
       { dest: 'out/iife/graph.min.js', format: 'iife' } /*to solve: es*/
     ],
-    moduleName: 'graph',
+    moduleName: 'Graph',
     plugins: [
         rollupTypescript(),
         nodeResolve(),

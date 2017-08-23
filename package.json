@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-resolve": "0.0.1-predev.1",
     "rollup-plugin-typescript": "^0.8.1",
-    "rollup-plugin-uglify": "^2.0.1"
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.3.1"
   }
 }
