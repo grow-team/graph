@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        text-align: center;
+    }
+    #yourcanvas{
+        width: 800px;
+        height: 500px;
+        margin-top: 50px;
+        border: 1px solid #ccc;
+    }
+</style>
 <body>
     <canvas id='yourcanvas'></canvas>
     <script type="text/javascript" src="out/umd/graph.js"></script>
     <script>
+        let graph = new Graph.Graph('yourcanvas');
+        graph.line(100,100,200,200);
         
     </script>
 </body>

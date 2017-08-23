@@ -2,6 +2,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import rollupTypescript from 'rollup-plugin-typescript';
 import uglify from 'rollup-plugin-uglify';
+import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
 
 
@@ -29,7 +30,10 @@ export default [
           exclude: [],
           extensions: [ '.js', '.ts' ],
           ignoreGlobal: false
-        })
+        }),
+        babel({
+          exclude: 'node_modules/**'
+        }),
     ]
   },{
     entry: 'src/graph.ts',
@@ -46,6 +50,9 @@ export default [
           exclude: [],
           extensions: [ '.js', '.ts' ],
           ignoreGlobal: false
+        }),
+        babel({
+          exclude: 'node_modules/**'
         }),
         uglify()
     ]
