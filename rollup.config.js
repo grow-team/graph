@@ -5,12 +5,6 @@ import uglify from 'rollup-plugin-uglify';
 import babel from 'rollup-plugin-babel';
 import pkg from './package.json';
 
-
-let creatOpts = function(){
-  return {};
-}
-
-
 /**
  * default 的返回，可以使对象，也可以是数组，数组的话会依次打包
  */
@@ -18,22 +12,22 @@ export default [
   {
     entry: 'src/graph.ts',
     targets: [
-      { dest: 'out/umd/graph.js', format: 'umd' },
+      { dest: 'out/umd/graph.js', format: 'umd'},
       { dest: 'out/es/graph.js', format: 'es' }
     ],
     moduleName: 'Graph',
     plugins: [
         rollupTypescript(),
+        babel({
+          exclude: 'node_modules/**'
+        }),
         nodeResolve(),
         commonjs({
           include: 'node_modules/**',
           exclude: [],
           extensions: [ '.js', '.ts' ],
           ignoreGlobal: false
-        }),
-        babel({
-          exclude: 'node_modules/**'
-        }),
+        })
     ]
   },{
     entry: 'src/graph.ts',
@@ -44,15 +38,15 @@ export default [
     moduleName: 'Graph',
     plugins: [
         rollupTypescript(),
+        babel({
+          exclude: 'node_modules/**'
+        }),
         nodeResolve(),
         commonjs({
           include: 'node_modules/**',
           exclude: [],
           extensions: [ '.js', '.ts' ],
           ignoreGlobal: false
-        }),
-        babel({
-          exclude: 'node_modules/**'
         }),
         uglify()
     ]
