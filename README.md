@@ -28,6 +28,6 @@
 *今天logo也有了，完美的开始。一定要坚持下去，按照规划一步一步做完。I believe we can do.*
 
 
-**Although we are not the best,we can persist.And we are being in better progress every day**
+**Although we are not the best,we can persist.And we are becoming better every day**
 
     
