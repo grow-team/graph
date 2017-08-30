@@ -8,19 +8,31 @@ export class Path extends Shape {
     constructor(ctx, x,y, ...args) {
         super(ctx, x,y);
         this.args = args;
+
+        this.ctx.beginPath();
+
+        this._draw(x,y,args);
+
+        this.ctx.closePath();
+        this.ctx.stroke();
         console.log('...constructor() Path');
     }
 
-    draw() {
-        super.start();
+    draw(x, y , ...args) {
 
-        let args = this.args;
-        this.ctx.moveTo(this.x, this.y);
+        super.start();
+        this._draw(x, y,args);
+        super.end();
+
+        console.log('...draw() Path');
+    }
+
+    private _draw( x, y, ...args) {
+        
+        this.ctx.moveTo(x,y);
         for(let i=0; i<args.length-1; i+=2){
             this.ctx.lineTo(args[i], args[i+1]);
         }
-
-        super.end();
-        console.log('...draw() Path');
+        
     }
 }

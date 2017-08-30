@@ -14,18 +14,17 @@
         text-align: center;
     }
     #yourcanvas{
-        width: 800px;
-        height: 500px;
         margin-top: 50px;
         border: 1px solid #ccc;
     }
 </style>
 <body>
-    <canvas id='yourcanvas'></canvas>
+    <canvas id='yourcanvas' width="800px" height="500px"></canvas>
     <script type="text/javascript" src="dist/umd/graph.js"></script>
     <script>
         let graph = new Graph('yourcanvas');
-        graph.line(100,100,200,200);
+        graph.line(50,50,100,100).draw(200,200,300,400,500,600);
+        
         
     </script>
 </body>

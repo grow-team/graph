@@ -9,5 +9,7 @@ export class Graph {
     }
     line(x,y,...args) {
         let line = new Line(this.ctx,x,y,...args);
+
+        return line;
     }
 }

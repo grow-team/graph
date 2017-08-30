@@ -11,8 +11,8 @@ export class Line extends Path {
         console.log('...constructor() Line');
     }
 
-    draw() {
-        super.draw();
+    draw(x, y , ...args) {
+        super.draw(x, y , ...args);
         console.log('...draw() Line');
     }
 }
