@@ -20,5 +20,5 @@ export abstract class Shape {
         this.ctx.stroke();
     }
 
-    abstract draw(): void;
+    abstract draw(...args): void;
 }
