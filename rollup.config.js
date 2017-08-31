@@ -3,7 +3,6 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import rollupTypescript from 'rollup-plugin-typescript';
 import uglify from 'rollup-plugin-uglify';
 import babel from 'rollup-plugin-babel';
-import pkg from './package.json';
 
 /**
  * default 的返回，可以使对象，也可以是数组，数组的话会依次打包
