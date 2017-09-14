@@ -13,3 +13,5 @@ todo:
 4、图形基本方法 draw、clear、style等方法（每个图形不全一样）
 
 5、实现打包（依赖Tree Shaking）
+
+6、es6模块特性，如何实现Tree Shaking
